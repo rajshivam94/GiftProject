@@ -1,0 +1,26 @@
+/*
+    This CSS file is a part of GiftProject Website.
+    Location: website-link/CSS/giftProject-home.css
+    CSS for homepage.
+    Author: Shivam Raj
+    Created on 10 May 2021
+
+*/
+
+/* SECTION STARTS HERE */
+
+    /* video area */
+.video-container{ display:flex;justify-content: center; }
+.video-container > video{ 
+    padding: 2px;
+    /* border: 2px rgb(207, 206, 206) inset; */
+    border-radius: 1.3rem;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.video-caption{
+    text-align: center;
+    color: rgb(109, 109, 109);
+    font-size: 1.1rem;
+    padding: 0.5rem 0;
+}

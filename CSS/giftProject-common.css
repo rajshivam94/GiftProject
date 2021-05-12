@@ -1,0 +1,184 @@
+/*
+    This CSS file is a part of GiftProject Website.
+    Location: website-link/CSS/giftProject-common.css
+    CSS for both homepage and download page .
+    Author: Shivam Raj
+    Created on 10 May 2021
+
+*/
+/* Body */
+*,body{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+/* Navigation Bar */
+
+.navbar{
+    padding: 1% 5%;
+    margin: 0 1rem;
+    background-image: linear-gradient(to right, #eff2f2, #bec0c0, #8f9090, #626363, #393939, #393939, #393939, #393939, #626363, #8f9090, #bec0c0, #eff2f2);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.heading{
+    font-size: 4.8rem;
+    font-family: 'Itim', cursive;
+    color: #eff2f2 !important; /*Important tag used so that cutom css for A tag dont interfere this class*/
+    text-decoration: none;
+    /* text-align: center; */
+}
+.heading:hover{
+    text-decoration: none !important; /*Important tag used so that cutom css for A tag dont interfere this class*/
+    color: #eff2f2 !important;
+}
+
+/* Clickable Links */
+
+a:link {
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(109, 109, 109);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color:rgb(109, 109, 109);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color:rgb(109, 109, 109);
+    background-color: transparent;
+    text-decoration: underline;
+  }
+    
+/* Section */
+section{
+    background-color: rgb(250, 250, 250);
+    margin: 0 10%;
+    padding: 4% 2%;
+}
+
+/* Footer */
+footer > .container{
+    /* text-align: center; */
+    padding: 1% 5%;
+    margin: 0 1rem;
+    background-color: rgb(39, 39, 39);
+}
+
+.footer-links{}
+
+.section-about h2,.footer-links h2 {
+    font-size: 3.2rem;
+    font-family: 'Rancho', cursive;
+    /* color: rgb(211, 211, 211); */
+    /* text-decoration: underline; */
+    color: rgb(214, 213, 213);
+}
+
+.footer-about > p {
+    color: rgb(214, 213, 213);
+}
+
+.footer-description > p{
+    text-align: center;
+    font-family: 'Baloo 2', cursive;
+    font-size: 2rem;
+    color: rgb(214, 213, 213);
+}
+
+.footer-links {}
+
+
+
+/* Google Icons */
+
+.material-icons{font-size: 6.4rem;}
+.icon-white{color:#eee}
+.icon-16{font-size: 1.6rem;}
+.icon-32{font-size: 3.2rem;}
+.icon-48{font-size: 4.8rem;}
+
+/* .icon-64{font-size: 6.4rem;} */
+
+/* paddings */
+.padding-tb-5{padding: 5px 0;}
+.padding-tb-10{padding: 10px 0;}
+
+
+/* Font Sizes */
+.font-16{font-size: 1.6rem;}
+.font-24{font-size: 2.4rem;}
+.font-32{font-size: 3.2rem;}
+.font-56{font-size: 5.6rem;}
+
+/* Text Rotate Effect */
+.middle{
+
+    margin:auto;
+    text-align:center;
+  }
+  .text-type-animation{
+    font-size:2.4;
+    
+  }
+  .txt-rotate{
+    color:grey;
+    
+  }
+
+/* Music css */
+audio{display: none;}
+#player-container #play-pause {
+    cursor: pointer;
+    text-indent: -999999px;
+    height:15px;
+    width: 15px;
+    padding: 12px 18px;
+    z-index: 2;
+      background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+      background-repeat: no-repeat!important;
+      background-position: center;
+      background-size: 16px;
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:20px;
+    background-color: gainsboro;
+  }
+  .play {
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMiAyNHYtMjRsMjAgMTItMjAgMTJ6Ii8+PC9zdmc+);
+  }
+  .pause {
+     background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTAgMjRoLTZ2LTI0aDZ2MjR6bTEwLTI0aC02djI0aDZ2LTI0eiIvPjwvc3ZnPg==)!important;
+  }
+
+/* Responsive Media Query Starts Here!! */
+@media only screen and (max-width: 450px) {
+    .heading{
+        font-size: 3.2rem;
+        
+    }
+    .material-icons{
+        font-size: 3.2rem;
+        vertical-align: middle;
+    }
+
+    section,.navbar,footer >.container{
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin-left: 0;
+        margin-right: 0;
+    }
+  }

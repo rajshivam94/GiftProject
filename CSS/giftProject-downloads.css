@@ -1,0 +1,33 @@
+/*
+    This CSS file is a part of GiftProject Website.
+    Location: website-link/CSS/giftProject-common.css
+    CSS for download page .
+    Author: Shivam Raj
+    Created on 10 May 2021
+
+*/
+*,body{
+    font-size: 10px;
+}
+/* Table Css */
+.table-container {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid rgb(133, 133, 133);
+  }
+  
+/* section */
+section > p {
+    font-size: 2rem;
+}
+
+section  > h2 {
+    font-size: 3.2rem;
+    font-family: 'Itim', cursive;
+    color: rgb(214, 213, 213);
+}
+
+td > span {font-size: 1.6rem;}
+
+ tr,td{padding: 0.5rem;}

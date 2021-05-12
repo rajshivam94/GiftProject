@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is download page of Gift Project.It is developed for Name">
+    <link rel="shortcut icon" href="./Assets/Icons/GiftProject-favicon.png" type="image/x-icon">
+    <title>Downloads - Gift Project - Name</title>
+    <!-- EXTERNAL LINKS -->
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <!-- google icons links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/giftProject-common.css">
+    <link rel="stylesheet" href="./CSS/giftProject-downloads.css">
+    <!-- JS Script -->
+
+</head>
+<body>
+    <!-- Background Music -->
+    <audio controls id="track">
+        <source src="./Assets/Audio/bg-music-GiftProject.mp3" type="audio/mpeg" loop>
+      Your browser does not support the audio element.
+      </audio>
+    <!-- header starts here!!! -->
+    <header class="header">
+        <div class="navbar">
+            <a class="heading" href="./index.html"> Gift Project</a>
+            <div id="player-container">
+                <div id="play-pause" class="play">Play</div>
+              </div>          <!-- <i class="material-icons">dark_mode</i> -->
+        </div>
+    </header>
+      <!-- Header ends here! -->
+      <!-- Section Starts here! -->
+    <section>
+        <h2 class="padding-tb-10">Download Section</h2>
+        <p class="padding-tb-5">Videos</p>
+        <!-- Table for videos -->
+        <div style="overflow-x:auto;">
+            <table class="table-container">
+                <tr>
+                    <td style="width: 75%;"><span>Painting-Landscape</span></td>
+                    <td>
+                        <a href="">
+                            <span class="material-icons">
+                            remove_red_eye
+                            </span></a>
+                    </td>
+                    <td>
+                        <a href="./Assets/Videos/Divya-Painting-Original-720p.mp4"><span class="material-icons">
+                        file_download
+                        </span></a>
+                    </td>
+                </tr>
+                <div class="padding-tb-5"></div>
+                <tr>
+                    <td><span>Painting-Portrait</span></td>
+                    <td><a href="">
+                        <span class="material-icons">
+                        remove_red_eye
+                        </span></a></td>
+                    <td><a href="./Assets/Videos/Divya-Painting-30s-720p.mp4" download="Painting-portrait">
+                        <span class="material-icons">
+                            file_download
+                            </span>
+                         </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <p class="padding-tb-5">Insta Stories</p>
+        <div class="padding-tb-5"></div>
+
+        <!-- Table for Insta Stories -->
+        <div style="overflow-x:auto;">
+            <table class="table-container">
+                <tr>
+                    <td style="width: 75%;"><span>Birthday-Wish</span></td>
+                    <td><a href=">
+                        <span class="material-icons">
+                        remove_red_eye
+                        </span></a></td>
+                    <td><a href="./Assets/Videos/birthday-wish.mp4" download="Happy Birthday-story">
+                        <span class="material-icons">
+                        file_download
+                        </span></a>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td style="width: 75%;"><span>Last Story</span></td>
+                    <td><a href="">
+                        <span class="material-icons">
+                        remove_red_eye
+                        </span></a></td>
+                    <td><a href="./Assets/Videos/another-story.mp4" download>
+                        <span class="material-icons">
+                        file_download
+                        </span></a>
+                    </td>
+                </tr>
+                
+            </table>
+        </div>
+        <div class="padding-tb-5"></div>
+        <p class="padding-tb-5">Photos</p>
+        <!-- Table for Photos -->
+        <div style="overflow-x:auto;">
+            <table class="table-container">
+                <tr>
+                    <td style="width: 75%;"><span>Painting</span></td>
+                    <td><a href="">
+                        <span class="material-icons">
+                        remove_red_eye
+                        </span></a></td>
+                    <td><a href="./Assets/Photos/Divya-Painting-original.png" download="Painting-Photo">
+                        <span class="material-icons">
+                        file_download
+                        </span></a></td>
+                </tr>
+
+            </table>
+        </div>
+    </section>  
+      <!-- Section Ends Here!! -->
+      <!-- Footer starts here -->
+      <footer>
+        <div class="container">
+        
+          <div class="footer-links padding-tb-10"">
+            
+            <table style="width:100%">
+              <tr>
+                <th><h2>Links</h2></th>
+                <th><h2>Contacts</h2></th> 
+              </tr>
+              <tr>
+                <td><a href="./index.html" class="font-16">Home</a></td>
+                <td><span class="material-icons icon-white">
+                  email
+                  </span><a href="mailto:rajshivam287@gmail.com">rajshivam287@gmail.com</a></td>
+              </tr>
+              <tr>
+                <td><a href="./giftProject-downloads.html" class="font-16">Downloads</a></td>
+              </tr>
+            </table>
+            
+          </div>
+          <div class="footer-description padding-tb-10"">
+            <p class="font-16">Built with &#10084; by Shivam Raj</p>
+          </div>
+        </div>
+      </footer>
+      <!-- JS SCript -->
+      <script>
+          var track = document.getElementById('track');
+
+            var controlBtn = document.getElementById('play-pause');
+
+            function playPause() {
+                if (track.paused) {
+                    track.play();
+                    //controlBtn.textContent = "Pause";
+                    controlBtn.className = "pause";
+                } else { 
+                    track.pause();
+                    //controlBtn.textContent = "Play";
+                    controlBtn.className = "play";
+                }
+            }
+
+            controlBtn.addEventListener("click", playPause);
+            track.addEventListener("ended", function() {
+            controlBtn.className = "play";
+            });
+      </script>
+
+      <!-- Footer ends here -->
+</body>
+</html>

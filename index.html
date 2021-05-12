@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is homepage for Gift Project.It is developed for Name ">
+    <link rel="shortcut icon" href="./Assets/Icons/GiftProject-favicon.png" type="image/x-icon">
+    <title>Homepage - Gift Project - Name</title>
+    <!-- EXTERNAL LINKS -->
+    <!-- google fonts links -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <!-- google icons links -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./CSS/giftProject-common.css">
+    <link rel="stylesheet" href="./CSS/index.css">
+    
+</head>
+<body>
+      <!-- Background Music -->
+    <audio controls id="track">
+      <source src="./Assets/Audio/bg-music-GiftProject.mp3" type="audio/mpeg" loop>
+    Your browser does not support the audio element.
+    </audio>
+    <!-- header starts here!!! -->
+    <header class="header">
+      <div class="navbar">
+        <a class="heading" href="./index.html"> Gift Project</a>
+        <div id="player-container">
+          <div id="play-pause" class="play">Play</div>
+        </div>          <!-- <i class="material-icons">dark_mode</i> -->
+
+        
+        <!-- <i class="material-icons">dark_mode</i> -->
+      </div>
+    </header>
+    <!-- header ends here!!! -->
+
+    <!-- section starts here!!! -->
+    <section>
+      <!-- Text Rotate Typing effect -->
+      <!-- <div class="middle">
+        <span class="text-type-animation middle-custom">I AM  </span><br>
+          <span
+                class="txt-rotate"
+                data-period="2000"
+                data-rotate='[ "Divya Mehta", "#mathsKiDeewani"]'>
+         </span>
+       </div> -->
+      <div class="padding-tb-10"></div>
+      <!-- Video Container is here! -->
+      </div>
+      <div class="video-container">
+        <video width="100%" height="auto" autoplay muted loop><!--Leave width as 100%,don't change the value if you want video to be web responsive| loop-plays video in a loop without pause-->
+          <source src="./Assets/Videos/GiftProject-WebPage Video.mp4">
+          <source src="./Assets/Videos/GiftProject-WebPage Video.mp4">
+        Video not supported in your browser <!--This text will show when user's browser doesn't support video-->
+        </video>
+      </div>
+      <p class="video-caption">MyBOT painting you at 840x</p>
+
+      <div class="section-about padding-tb-10">
+        <h2>About</h2>
+        <p class="font-16">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit quibusdam voluptas assumenda voluptates libero similique dolorem incidunt earum repudiandae consequuntur rerum, eligendi harum rem amet iusto nulla, ea odio dolor, recusandae omnis.</p>
+        <p class="font-16 padding-tb-10">Visit <a href="./giftProject-downloads.html" class="font-16">download</a> page to download resources.<param/>
+      </div>
+    </section>
+    <!-- section ends here -->
+    <!-- footer starts here!!! -->
+    <footer>
+      <div class="container">
+      
+        <div class="footer-links padding-tb-10"">
+          
+          <table style="width:100%">
+            <tr>
+              <th><h2>Links</h2></th>
+              <th><h2>Contacts</h2></th> 
+            </tr>
+            <tr>
+              <td><a href="./index.html" class="font-16">Home</a></td>
+              <td><span class="material-icons icon-white icon-16">
+                email
+                </span><a href="mailto:rajshivam287@gmail.com">rajshivam287@gmail.com</a></td>
+            </tr>
+            <tr>
+              <td><a href="./giftProject-downloads.html" class="font-16">Downloads</a></td>
+            </tr>
+          </table>
+          
+        </div>
+        <div class="footer-description padding-tb-10"">
+          <p class="font-16">Built with &#10084; by Shivam Raj</p>
+        </div>
+      </div>
+    </footer>
+    <!-- footer ends here!!! -->
+
+    <!-- Scripts start here  -->
+    <script> //to play pause music
+      var track = document.getElementById('track');
+
+        var controlBtn = document.getElementById('play-pause');
+
+        function playPause() {
+            if (track.paused) {
+                track.play();
+                //controlBtn.textContent = "Pause";
+                controlBtn.className = "pause";
+            } else { 
+                track.pause();
+                //controlBtn.textContent = "Play";
+                controlBtn.className = "play";
+            }
+        }
+
+        controlBtn.addEventListener("click", playPause);
+        track.addEventListener("ended", function() {
+        controlBtn.className = "play";
+        });
+    </script>
+    <script>
+      // Text Rotate
+    var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 100) || 4000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 150 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 1000;
+      }
+
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #F26921 }";
+      document.body.appendChild(css);
+    };
+    </script>
+</body>
+
+</html>
