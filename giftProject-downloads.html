@@ -1,5 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!--
+    This HTML file is a part of GiftProject Website.
+    Location: www.rajshivam94.github.io/GiftProject/giftProject-downloads.html
+    HTML File for download page.
+    Author: Shivam Raj
+    Created on 10 May 2021
+    Last Updated on 15 May 2021
+    -->
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -48,28 +57,27 @@
                     <td style="width: 75%;"><span>Painting-Landscape</span></td>
                     <td>
                         <a href="./Assets/Videos/Divya-Painting-Original-360p-Preview.mp4">
-                            <span class="material-icons">
-                            remove_red_eye
-                            </span></a>
+                            <img src="./Assets/Icons/preview-icon.png" alt="dowload-icon" class="icon-16">
+                        </a>
                     </td>
                     <td>
-                        <a href="./Assets/Videos/Divya-Painting-Original-720p.mp4"><span class="material-icons">
-                        file_download
-                        </span></a>
+                        <a href="./Assets/Videos/Divya-Painting-Original-720p.mp4">
+                            <img src="./Assets/Icons/download-icon.png" alt="dowload-icon" class="icon-16">
+                        </a>
                     </td>
                 </tr>
                 <div class="padding-tb-5"></div>
                 <tr>
                     <td><span>Painting-Portrait</span></td>
-                    <td><a href="./Assets/Videos/Divya-Painting-30s-Preview.mp4">
-                        <span class="material-icons">
-                        remove_red_eye
-                        </span></a></td>
-                    <td><a href="./Assets/Videos/Divya-Painting-30s-720p.mp4" download="Painting-portrait">
-                        <span class="material-icons">
-                            file_download
-                            </span>
-                         </a>
+                    <td>
+                        <a href="./Assets/Videos/Divya-Painting-30s-Preview.mp4">
+                            <img src="./Assets/Icons/preview-icon.png" alt="preview-icon" class="icon-16">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="./Assets/Videos/Divya-Painting-30s-720p.mp4" download="Painting-portrait">
+                            <img src="./Assets/Icons/download-icon.png" alt="dowload-icon" class="icon-16">
+                        </a>
                     </td>
                 </tr>
             </table>
@@ -84,26 +92,24 @@
                 <tr>
                     <td style="width: 75%;"><span>Birthday-Wish</span></td>
                     <td><a href="./Assets/Videos/birthday-wish.mp4">
-                        <span class="material-icons">
-                        remove_red_eye
-                        </span></a></td>
-                    <td><a href="./Assets/Videos/birthday-wish.mp4" download="Happy Birthday-story">
-                        <span class="material-icons">
-                        file_download
-                        </span></a>
+                        <img src="./Assets/Icons/preview-icon.png" alt="preview-icon" class="font-32"></a></td>
+                    <td>
+                        <a href="./Assets/Videos/birthday-wish.mp4" download="Happy Birthday-story">
+                            <img src="./Assets/Icons/download-icon.png" alt="dowload-icon" class="icon-16">
+                        </a>
                     </td>
                 </tr>
                 
                 <tr>
                     <td style="width: 75%;"><span>Last Story</span></td>
-                    <td><a href="./Assets/Videos/another-story.mp4">
-                        <span class="material-icons">
-                        remove_red_eye
-                        </span></a></td>
-                    <td><a href="./Assets/Videos/another-story.mp4" download>
-                        <span class="material-icons">
-                        file_download
-                        </span></a>
+                    <td>
+                        <a href="./Assets/Videos/another-story.mp4">
+                            <img src="./Assets/Icons/preview-icon.png" alt="preview-icon" class="font-32">
+                        </a>
+                    </td>
+                    <td>
+                        <a href="./Assets/Videos/another-story.mp4" download>
+                            <img src="./Assets/Icons/download-icon.png" alt="dowload-icon" class="icon-16"></a>
                     </td>
                 </tr>
                 
@@ -117,13 +123,9 @@
                 <tr>
                     <td style="width: 75%;"><span>Painting</span></td>
                     <td><a href="./Assets/Photos/Divya-Painting-original.png">
-                        <span class="material-icons">
-                        remove_red_eye
-                        </span></a></td>
+                        <img src="./Assets/Icons/preview-icon.png" alt="preview-icon" class="font-32"></a></td>
                     <td><a href="./Assets/Photos/Divya-Painting-original.png" download="Painting-Photo">
-                        <span class="material-icons">
-                        file_download
-                        </span></a></td>
+                        <img src="./Assets/Icons/download-icon.png" alt="dowload-icon" class="icon-16"></a></td>
                 </tr>
 
             </table>
@@ -142,24 +144,28 @@
                 <th><h2>Contact</h2></th> 
               </tr>
               <tr>
-                <td><a href="./index.html" class="font-16">Home</a></td>
+                <td><a href="./index.html" class="icon-16">Home</a></td>
                 <td><span class="material-icons icon-white">
                   email
-                  </span><a href="mailto:rajshivam287@gmail.com">Mail Me</a></td>
+                  </span><a href="mailto:rajshivam287@gmail.com" class="font-16">Mail Me</a></td>
               </tr>
               <tr>
-                <td><a href="./giftProject-downloads.html" class="font-16">Downloads</a></td>
+                <td><a href="./giftProject-downloads.html" class="icon-16">Downloads</a></td>
               </tr>
             </table>
             
           </div>
           <div class="footer-description padding-tb-10"">
-            <p class="font-16">Built with &#10084; by Shivam Raj.</p>
+            <p class="icon-16">Built with &#10084; by Shivam Raj.</p>
           </div>
         </div>
       </footer>
+
+      <!-- Footer ends here -->
       <!-- JS SCript -->
       <script>
+          //play pause background music
+          //Element ID 'track' at line 35
           var track = document.getElementById('track');
 
             var controlBtn = document.getElementById('play-pause');
@@ -182,6 +188,6 @@
             });
       </script>
 
-      <!-- Footer ends here -->
+        <!-- JS scripts ends here!! -->
 </body>
 </html>
